@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 :root { color-scheme: light; }
 
 body {
@@ -26,4 +27,25 @@ body {
   border-radius: 12px;
   background: #df0d0d;
   border: 1px solid #2a0ee1;
+=======
+.count {
+  font-size: 42px;
+  margin: 8px 0 14px;
+>>>>>>> ramaDev3
 }
+
+.actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover { background: #f2f2f2; }
