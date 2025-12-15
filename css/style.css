@@ -1,51 +1,73 @@
-
-:root { color-scheme: light; }
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 
 body {
-  font-family: system-ui, Arial, sans-serif;
   margin: 0;
   min-height: 100vh;
-  display: grid;
-  place-items: center;
-  padding: 24px;
-  background: #f4f6f8;
-}
-
-.card {
-  width: min(720px, 100%);
-  background: #fff;
-  padding: 24px;
-  border-radius: 14px;
-  border: 1px solid #e6e8eb;
-}
-
-.title { margin: 0 0 6px; }
-.subtitle { margin: 0 0 18px; color: #555; }
-
-.box {
-  padding: 16px;
-  border-radius: 12px;
-  background: #df0d0d;
-  border: 1px solid #2a0ee1;
-}
-.count {
-  font-size: 42px;
-  margin: 8px 0 14px;
-
-}
-
-.actions {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
 
-button {
-  padding: 10px 14px;
+.login-card {
+  background: #ffffff;
+  padding: 2rem;
+  width: 100%;
+  max-width: 360px;
   border-radius: 10px;
-  border: 1px solid #ddd;
-  background: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.field input {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.field input:focus {
+  outline: none;
+  border-color: #2a5298;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2a5298;
+  color: white;
+  font-size: 1rem;
   cursor: pointer;
 }
 
-button:hover { background: #f2f2f2; }
+.btn-login:hover {
+  background-color: #1e3c72;
+}
+
+.message {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
