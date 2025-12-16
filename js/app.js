@@ -13,6 +13,6 @@ form.addEventListener("submit", function (e) {
     message.textContent = "Login correcto. Bienvenido 👍";
   } else {
     message.style.color = "red";
-    message.textContent = "Usuario o contraseña incorrectos ❌";
+    message.textContent = "Usuario o contraseña incorrectos ❌ vuelve a intentarlo.";
   }
 });
