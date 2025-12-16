@@ -1,27 +1,18 @@
-let value = 0;
+const form = document.getElementById("loginForm");
+const message = document.getElementById("message");
 
-const countEl = document.getElementById("count");
-const btnMinus = document.getElementById("btnMinus");
-const btnPlus = document.getElementById("btnPlus");
-const btnReset = document.getElementById("btnReset");
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
 
-function render() {
-  countEl.textContent = String(value);
-}
+  const user = document.getElementById("user").value;
+  const password = document.getElementById("password").value;
 
-btnMinus.addEventListener("click", () => {
-  value--;
-  render();
+  // Credenciales simuladas
+  if (user === "admin" && password === "1234") {
+    message.style.color = "green";
+    message.textContent = "Login correcto. Bienvenido 👍";
+  } else {
+    message.style.color = "red";
+    message.textContent = "Usuario o contraseña incorrectos ❌";
+  }
 });
-
-btnPlus.addEventListener("click", () => {
-  value++;
-  render();
-});
-
-btnReset.addEventListener("click", () => {
-  value = 0;
-  render();
-});
-
-render();
